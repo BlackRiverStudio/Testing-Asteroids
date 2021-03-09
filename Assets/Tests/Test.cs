@@ -57,7 +57,6 @@ public class Test
     [UnityTest] public IEnumerator LazerAccends()
     {
         Shit shit = v.GetShit();
-        GameObject fan = shit.gameObject;
         GameObject lazer = shit.SpawnLazer();
         float initialY = lazer.transform.position.y;
         yield return new WaitForSeconds(0.1f);
@@ -67,7 +66,6 @@ public class Test
     [UnityTest] public IEnumerator LazerDestroyesAss()
     {
         Shit shit = v.GetShit();
-        GameObject fan = shit.gameObject;
         GameObject lazer = shit.SpawnLazer();
         Spawner spawner = v.spawner;
         GameObject ass = spawner.SpawnAssteroid();
